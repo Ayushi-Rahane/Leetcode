@@ -1,0 +1,26 @@
+<script>
+    let a = [3,4,5,6,3,1,5]
+    let len_subarray=3;
+    let sum_array=[];
+
+    
+        for(let j=0; j<a.length;j++){
+            
+              
+              if(a[j+1]<=a.length && a[j+2]<=a.length){
+                console.log("Subarray")
+                    console.log(a[j])
+                    console.log(a[j+1])
+                    console.log(a[j+2])
+
+
+
+
+                    sum_array[j] = (a[j]+a[j+1]+a[j+2])
+                console.log("Sum of subarray: "+sum_array[j])
+
+              }
+        }
+        console.log("Max sum is: ", Math.max(...sum_array))
+    
+</script>

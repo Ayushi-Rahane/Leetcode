@@ -1,0 +1,38 @@
+<script>
+    var isValid = function(s) {
+   let stk =[];
+    
+    Arr_str = s.split('');
+    for(let i=0;i<Arr_str.length;i++){
+        if(Arr_str[i]=='('||Arr_str[i]=='['||Arr_str[i]=='{'){
+            stk.push(Arr_str[i])
+        }
+        else if(Arr_str[i]==')' && stk[stk.length-1]=='(')
+        { 
+            stk.pop();
+        }
+        else if(Arr_str[i]==']' && stk[stk.length-1]=='[')
+        { 
+            stk.pop();
+        }
+        else if(Arr_str[i]=='}' && stk[stk.length-1]=='{')
+        { 
+                stk.pop();
+        }
+        else{
+            return false;
+        }
+
+        }
+        console.log(stk.length);
+        if(stk.length <= 0){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+
+    console.log("Output: "+ isValid("({])"))
+
+</script>

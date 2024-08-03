@@ -1,0 +1,36 @@
+<script>
+  console.log("Length of abcabcbb: ", lengthOfLongestSubstring("abcabcbb"))
+  //console.log("Length of bbbbb: ", lengthOfLongestSubstring("bbbbb"))
+  //console.log("Length pwwkew: ", lengthOfLongestSubstring("pwwkew"))
+  function lengthOfLongestSubstring(s) {
+    let sa = s.split('');
+    let ns=[];
+    let na=0
+    let j=0;
+    for(let i=0;i<sa.length;i++){
+       for(let j=0;j<sa.length;j++){
+            if(sa[i]==ns[j]){
+                
+                    ns[i]=sa[i]
+                    console.log(ns[i])
+                    break;
+            }
+            else{
+                j++
+            }
+          
+        }
+            
+            
+        
+    }
+    
+};
+
+
+/*
+     
+*/
+</script>
+
+
