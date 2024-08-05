@@ -1,0 +1,34 @@
+<script>
+   /*  var lengthOfLastWord = function(s) {
+        let arr = s.split(" ");
+        
+        while((arr[arr.length-1]=="")){
+            arr.splice(arr.length-1,1);
+        }
+        
+        if(arr[arr.length-1]!=""){
+                return arr[arr.length-1].length
+    }
+      
+};
+
+console.log(lengthOfLastWord("Hello World ghy")) */
+
+//By usng map function
+var lengthOfLastWord = function(s) {
+let arr = s.split(" ");
+let newArr=[];
+
+arr.map((x)=>{
+    if(x!=""){
+        newArr.push(x)
+    }
+});
+
+return newArr[newArr.length-1].length
+
+};
+
+console.log(lengthOfLastWord("Hello World ghy")) 
+
+</script>
