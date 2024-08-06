@@ -1,0 +1,23 @@
+<script>
+    var secondHighest = function(s) {
+    let arr = s.split("");
+    let Nums=[]
+    arr.map((x)=>{
+        if(!isNaN(x)){
+             Nums.push(parseInt(x))
+        }
+    })
+  
+    Nums = [...new Set(Nums)].sort((a, b) => b - a)
+    console.log(Nums)
+  if( Nums.length == 1 ){
+    return -1
+  }
+  else{
+    return Nums[1]
+  }
+};
+
+
+console.log(secondHighest("dfa12321afd"))
+</script>
