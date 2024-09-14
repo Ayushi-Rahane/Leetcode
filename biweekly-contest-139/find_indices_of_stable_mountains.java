@@ -1,7 +1,4 @@
 import java.util.*;
-
-import javax.management.openmbean.ArrayType;
-
 public class find_indices_of_stable_mountains {
      public List<Integer> stableMountains(int[] height, int threshold) {
         ArrayList<Integer> list = new ArrayList<>();
